@@ -18,7 +18,14 @@ first_ten_urls = urls[:10]
 
 data = [] # placeholder for data
 
-search_phrase = 'mayor of London'
+# Ask user for the phrase to search, ensuring it is not empty
+while True:
+    search_phrase = input("Enter the search phrase (e.g., 'mayor of London'): ").strip()
+    if search_phrase:  # Checks if the string is not empty
+        break
+    else:
+        print("The search phrase cannot be empty. Please enter a valid phrase.")
+
 pattern = re.compile(search_phrase, re.IGNORECASE) # search pattern
 
 # search through each web page, count matching patterns and append output to the data object
