@@ -80,6 +80,7 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+challenge.ipynb
 
 # IPython
 profile_default/
