@@ -32,5 +32,8 @@ for url in tqdm(urls, desc='Searching in progress: ', leave=False, colour='green
 
 # create and output the dataframe
 df = pd.DataFrame(data)
+
+print("\n")
 print(df)
 df.to_csv("report.csv", index=False)
+print("\n"+"search results have been saved to ./report.csv")
